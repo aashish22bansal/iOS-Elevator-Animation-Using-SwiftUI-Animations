@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		179434CF29AE712F004E3710 /* ElevatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434CE29AE712F004E3710 /* ElevatorApp.swift */; };
+		179434D129AE712F004E3710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434D029AE712F004E3710 /* ContentView.swift */; };
+		179434D329AE7131004E3710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179434D229AE7131004E3710 /* Assets.xcassets */; };
+		179434D729AE7131004E3710 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179434D629AE7131004E3710 /* Preview Assets.xcassets */; };
+		179434E129AE7131004E3710 /* ElevatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434E029AE7131004E3710 /* ElevatorTests.swift */; };
+		179434EB29AE7132004E3710 /* ElevatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434EA29AE7132004E3710 /* ElevatorUITests.swift */; };
+		179434ED29AE7132004E3710 /* ElevatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434EC29AE7132004E3710 /* ElevatorUITestsLaunchTests.swift */; };
+		179434FA29AE71D4004E3710 /* doorsOpenClose.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 179434F929AE71D4004E3710 /* doorsOpenClose.m4a */; };
+		179434FC29AE71E8004E3710 /* elevatorChime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 179434FB29AE71E8004E3710 /* elevatorChime.m4a */; };
+		179434FE29AE757B004E3710 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434FD29AE757B004E3710 /* DataModel.swift */; };
+		1794350029AE7FA7004E3710 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179434FF29AE7FA7004E3710 /* PlaySound.swift */; };
+		1794350229AE8E21004E3710 /* ElevatorAndPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794350129AE8E21004E3710 /* ElevatorAndPeopleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		179434DD29AE7131004E3710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 179434C329AE712F004E3710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 179434CA29AE712F004E3710;
+			remoteInfo = Elevator;
+		};
+		179434E729AE7132004E3710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 179434C329AE712F004E3710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 179434CA29AE712F004E3710;
+			remoteInfo = Elevator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		179434CB29AE712F004E3710 /* Elevator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elevator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		179434CE29AE712F004E3710 /* ElevatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorApp.swift; sourceTree = "<group>"; };
+		179434D029AE712F004E3710 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		179434D229AE7131004E3710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		179434D429AE7131004E3710 /* Elevator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Elevator.entitlements; sourceTree = "<group>"; };
+		179434D629AE7131004E3710 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		179434DC29AE7131004E3710 /* ElevatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		179434E029AE7131004E3710 /* ElevatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorTests.swift; sourceTree = "<group>"; };
+		179434E629AE7132004E3710 /* ElevatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		179434EA29AE7132004E3710 /* ElevatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorUITests.swift; sourceTree = "<group>"; };
+		179434EC29AE7132004E3710 /* ElevatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		179434F929AE71D4004E3710 /* doorsOpenClose.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = doorsOpenClose.m4a; path = "../../Resource files/doorsOpenClose.m4a"; sourceTree = "<group>"; };
+		179434FB29AE71E8004E3710 /* elevatorChime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = elevatorChime.m4a; path = "../../Resource files/elevatorChime.m4a"; sourceTree = "<group>"; };
+		179434FD29AE757B004E3710 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		179434FF29AE7FA7004E3710 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		1794350129AE8E21004E3710 /* ElevatorAndPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorAndPeopleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179434C829AE712F004E3710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434D929AE7131004E3710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434E329AE7132004E3710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		179434C229AE712F004E3710 = {
+			isa = PBXGroup;
+			children = (
+				179434CD29AE712F004E3710 /* Elevator */,
+				179434DF29AE7131004E3710 /* ElevatorTests */,
+				179434E929AE7132004E3710 /* ElevatorUITests */,
+				179434CC29AE712F004E3710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		179434CC29AE712F004E3710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				179434CB29AE712F004E3710 /* Elevator.app */,
+				179434DC29AE7131004E3710 /* ElevatorTests.xctest */,
+				179434E629AE7132004E3710 /* ElevatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		179434CD29AE712F004E3710 /* Elevator */ = {
+			isa = PBXGroup;
+			children = (
+				179434CE29AE712F004E3710 /* ElevatorApp.swift */,
+				179434D029AE712F004E3710 /* ContentView.swift */,
+				1794350129AE8E21004E3710 /* ElevatorAndPeopleView.swift */,
+				179434FD29AE757B004E3710 /* DataModel.swift */,
+				179434FF29AE7FA7004E3710 /* PlaySound.swift */,
+				179434F929AE71D4004E3710 /* doorsOpenClose.m4a */,
+				179434FB29AE71E8004E3710 /* elevatorChime.m4a */,
+				179434D229AE7131004E3710 /* Assets.xcassets */,
+				179434D429AE7131004E3710 /* Elevator.entitlements */,
+				179434D529AE7131004E3710 /* Preview Content */,
+			);
+			path = Elevator;
+			sourceTree = "<group>";
+		};
+		179434D529AE7131004E3710 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				179434D629AE7131004E3710 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		179434DF29AE7131004E3710 /* ElevatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				179434E029AE7131004E3710 /* ElevatorTests.swift */,
+			);
+			path = ElevatorTests;
+			sourceTree = "<group>";
+		};
+		179434E929AE7132004E3710 /* ElevatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				179434EA29AE7132004E3710 /* ElevatorUITests.swift */,
+				179434EC29AE7132004E3710 /* ElevatorUITestsLaunchTests.swift */,
+			);
+			path = ElevatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		179434CA29AE712F004E3710 /* Elevator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179434F029AE7132004E3710 /* Build configuration list for PBXNativeTarget "Elevator" */;
+			buildPhases = (
+				179434C729AE712F004E3710 /* Sources */,
+				179434C829AE712F004E3710 /* Frameworks */,
+				179434C929AE712F004E3710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elevator;
+			productName = Elevator;
+			productReference = 179434CB29AE712F004E3710 /* Elevator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		179434DB29AE7131004E3710 /* ElevatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179434F329AE7132004E3710 /* Build configuration list for PBXNativeTarget "ElevatorTests" */;
+			buildPhases = (
+				179434D829AE7131004E3710 /* Sources */,
+				179434D929AE7131004E3710 /* Frameworks */,
+				179434DA29AE7131004E3710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				179434DE29AE7131004E3710 /* PBXTargetDependency */,
+			);
+			name = ElevatorTests;
+			productName = ElevatorTests;
+			productReference = 179434DC29AE7131004E3710 /* ElevatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		179434E529AE7132004E3710 /* ElevatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179434F629AE7132004E3710 /* Build configuration list for PBXNativeTarget "ElevatorUITests" */;
+			buildPhases = (
+				179434E229AE7132004E3710 /* Sources */,
+				179434E329AE7132004E3710 /* Frameworks */,
+				179434E429AE7132004E3710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				179434E829AE7132004E3710 /* PBXTargetDependency */,
+			);
+			name = ElevatorUITests;
+			productName = ElevatorUITests;
+			productReference = 179434E629AE7132004E3710 /* ElevatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		179434C329AE712F004E3710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					179434CA29AE712F004E3710 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					179434DB29AE7131004E3710 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 179434CA29AE712F004E3710;
+					};
+					179434E529AE7132004E3710 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 179434CA29AE712F004E3710;
+					};
+				};
+			};
+			buildConfigurationList = 179434C629AE712F004E3710 /* Build configuration list for PBXProject "Elevator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 179434C229AE712F004E3710;
+			productRefGroup = 179434CC29AE712F004E3710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				179434CA29AE712F004E3710 /* Elevator */,
+				179434DB29AE7131004E3710 /* ElevatorTests */,
+				179434E529AE7132004E3710 /* ElevatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		179434C929AE712F004E3710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179434D729AE7131004E3710 /* Preview Assets.xcassets in Resources */,
+				179434FC29AE71E8004E3710 /* elevatorChime.m4a in Resources */,
+				179434FA29AE71D4004E3710 /* doorsOpenClose.m4a in Resources */,
+				179434D329AE7131004E3710 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434DA29AE7131004E3710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434E429AE7132004E3710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		179434C729AE712F004E3710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1794350229AE8E21004E3710 /* ElevatorAndPeopleView.swift in Sources */,
+				179434D129AE712F004E3710 /* ContentView.swift in Sources */,
+				1794350029AE7FA7004E3710 /* PlaySound.swift in Sources */,
+				179434CF29AE712F004E3710 /* ElevatorApp.swift in Sources */,
+				179434FE29AE757B004E3710 /* DataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434D829AE7131004E3710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179434E129AE7131004E3710 /* ElevatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179434E229AE7132004E3710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179434ED29AE7132004E3710 /* ElevatorUITestsLaunchTests.swift in Sources */,
+				179434EB29AE7132004E3710 /* ElevatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		179434DE29AE7131004E3710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 179434CA29AE712F004E3710 /* Elevator */;
+			targetProxy = 179434DD29AE7131004E3710 /* PBXContainerItemProxy */;
+		};
+		179434E829AE7132004E3710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 179434CA29AE712F004E3710 /* Elevator */;
+			targetProxy = 179434E729AE7132004E3710 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		179434EE29AE7132004E3710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		179434EF29AE7132004E3710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		179434F129AE7132004E3710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Elevator/Elevator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Elevator/Preview Content\"";
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.Elevator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		179434F229AE7132004E3710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Elevator/Elevator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Elevator/Preview Content\"";
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.Elevator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		179434F429AE7132004E3710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.ElevatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elevator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Elevator";
+			};
+			name = Debug;
+		};
+		179434F529AE7132004E3710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.ElevatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elevator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Elevator";
+			};
+			name = Release;
+		};
+		179434F729AE7132004E3710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.ElevatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elevator;
+			};
+			name = Debug;
+		};
+		179434F829AE7132004E3710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK2T82WWSV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aashish22bansal.ElevatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elevator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179434C629AE712F004E3710 /* Build configuration list for PBXProject "Elevator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179434EE29AE7132004E3710 /* Debug */,
+				179434EF29AE7132004E3710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179434F029AE7132004E3710 /* Build configuration list for PBXNativeTarget "Elevator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179434F129AE7132004E3710 /* Debug */,
+				179434F229AE7132004E3710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179434F329AE7132004E3710 /* Build configuration list for PBXNativeTarget "ElevatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179434F429AE7132004E3710 /* Debug */,
+				179434F529AE7132004E3710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179434F629AE7132004E3710 /* Build configuration list for PBXNativeTarget "ElevatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179434F729AE7132004E3710 /* Debug */,
+				179434F829AE7132004E3710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 179434C329AE712F004E3710 /* Project object */;
+}
